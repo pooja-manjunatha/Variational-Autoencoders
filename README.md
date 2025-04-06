@@ -1,6 +1,2 @@
 # Variational-Autoencoders
 This repo contains an in-depth overview of variational autoencoders (VAEs) specifically focused on how to create complex models in Keras, how to create denoising autoencoders, and how to create VAEs for text generation. 
-1.
-2.
-3. Custom Siamese NN:
-This code implements a Siamese Neural Network using TensorFlow/Keras, designed to determine whether two input images are similar or not. The network uses a shared base model that extracts 64-dimensional embeddings from each of the two input images (in this case, dummy data shaped like MNIST digits). These embeddings are then passed through a Lambda layer that computes the Euclidean distance between them. The model is trained using a custom contrastive loss function, which minimizes the distance for similar image pairs and enforces a margin between dissimilar ones. The base network consists of a flatten layer followed by two dense layers (128 and 64 units), and the contrastive loss ensures the network learns useful embeddings for pairwise comparison. Random dummy data is generated for both inputs and labeled as 1 if the "digits" match and 0 otherwise. The Siamese model is trained to produce small distances for similar pairs and larger distances for dissimilar pairs, making it useful for tasks like signature verification, face recognition, or one-shot learning.
